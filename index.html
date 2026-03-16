@@ -132,6 +132,21 @@ el.classList.add('show');
 });
 });
 
+<script>
+
+const fades = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', function(){
+fades.forEach(function(el){
+const position = el.getBoundingClientRect().top;
+const screen = window.innerHeight;
+
+if(position < screen - 100){
+el.classList.add('show');
+}
+});
+});
+
 </script>
 
 </body>
