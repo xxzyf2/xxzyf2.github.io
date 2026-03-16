@@ -55,8 +55,15 @@ border-radius:10px;
 margin-top:20px;
 }
 
-.video{
-margin-top:30px;
+.fade{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
 }
 
 footer{
@@ -84,53 +91,29 @@ font-size:14px;
 
 <div class="section" id="bike">
 
-<head>
-
-<style>
-
-body{
-background:black;
-color:white;
-text-align:center;
-}
-
-.fade{
-opacity:0;
-transform:translateY(50px);
-transition:1s;
-}
-
-.fade.show{
-opacity:1;
-transform:translateY(0);
-}
-
-</style>
-
-</head>
-
-<body>
-
 <h1>my bike</h1>
 
 <img src="IMG_7270.jpeg" class="fade">
 <img src="IMG_6292.jpeg" class="fade">
 <img src="bike3.jpg" class="fade">
 
-<script>
+</div>
 
-const fades = document.querySelectorAll('.fade');
+<div class="section" id="tiktok">
 
-window.addEventListener('scroll', () => {
-fades.forEach(el => {
-const pos = el.getBoundingClientRect().top;
-const screen = window.innerHeight;
+<h2>TikTok動画</h2>
 
-if(pos < screen - 100){
-el.classList.add('show');
-}
-});
-});
+<a href="https://www.tiktok.com/@x_xzyf2/video/7616353348895132949" target="_blank">動画①を見る</a><br>
+<a href="https://www.tiktok.com/@x_xzyf2/video/7615220125788114197" target="_blank">動画②を見る</a><br>
+<a href="https://www.tiktok.com/@x_xzyf2/photo/7615590776873176341" target="_blank">動画③を見る</a>
+
+</div>
+
+<footer>
+
+<p>© 2026 x_xzyf</p>
+
+</footer>
 
 <script>
 
@@ -150,54 +133,5 @@ el.classList.add('show');
 </script>
 
 </body>
-  
-</div>
-
-<div class="section" id="tiktok">
-
-
-  
-<h2>TikTok動画</h2>
-
-<div class="tiktok-area">
-
-<a href="https://www.tiktok.com/@x_xzyf2/video/7616353348895132949?is_from_webapp=1&sender_device=mobile&sender_web_id=7617820294141724181" target="_blank">
-動画①を見る
-</a>
-
-<a href="https://www.tiktok.com/@x_xzyf2/video/7615220125788114197?is_from_webapp=1&sender_device=mobile&sender_web_id=7617820294141724181" target="_blank">
-動画②を見る
-</a>
-
-<a href="https://www.tiktok.com/@x_xzyf2/photo/7615590776873176341?is_from_webapp=1&sender_device=mobile&sender_web_id=7617820294141724181" target="_blank">
-動画③を見る
-</a>
-
-</div>
-
-<script async src="https://www.tiktok.com/embed.js"></script>
-
-<a href="https://tiktok.com/@x_xzyf2">
-TikTokを見る
-</a>
-
-
-　<a href="https://www.instagram.com/_0118x?igsh=cDFweXg0cGd2bHRi&utm_source=qr">
-  instagramを見る
-  </a>
-  
-</a>
-</div>
-
-</div>
-
-<footer>
-
-<p>© 2026 x_xzyf</p>
-
-</footer>
-
-</body>
 
 </html>
-
