@@ -108,14 +108,33 @@ transform:translateY(0);
 </style>
 
 </head>
-  
-<h2>my bike</h2>
+
+<body>
+
+<h1>my bike</h1>
 
 <img src="IMG_7270.jpeg" class="fade">
-
-<h2>maguna250</h2>
-
 <img src="IMG_6292.jpeg" class="fade">
+<img src="bike3.jpg" class="fade">
+
+<script>
+
+const fades = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+fades.forEach(el => {
+const pos = el.getBoundingClientRect().top;
+const screen = window.innerHeight;
+
+if(pos < screen - 100){
+el.classList.add('show');
+}
+});
+});
+
+</script>
+
+</body>
   
 </div>
 
